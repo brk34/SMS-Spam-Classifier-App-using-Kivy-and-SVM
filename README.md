@@ -1,3 +1,4 @@
+
 # SMS-Spam-Classifier-App-using-Kivy-and-SVM
 
 A simple Kivy-based app that classifies SMS messages as Spam or Not Spam using an SVM model with TF-IDF and custom text features like punctuation, numbers, and links.
@@ -39,50 +40,43 @@ A simple desktop application built using **Kivy** that classifies SMS messages a
 
 2.  Install dependencies:
     
-    bash
-    
-    CopyEdit
-    
-    `pip install -r requirements.txt` 
+    ```bash
+    pip install -r requirements.txt
     
 3.  Download NLTK stopwords:
     
-    python
-    
-    CopyEdit
-    
-    `import nltk
-    nltk.download('stopwords')` 
+    ```bash
+    import nltk
+    nltk.download('stopwords') 
+    ```
     
 4.  Make sure the following files are present:
     
-    -   `vectorizer2.pkl`
-        
-    -   `svm2.pkl`
-        
+    -   vectorizer2.pkl
+    -   svm2.pkl
 
 ----------
 
 ## ▶️ Run the App
 
-bash
+   python app.py
 
-CopyEdit
-
-`python app.py` 
 
 ----------
 
 ## 📁 File Structure
 
-bash
 
-CopyEdit
+   ```bash
+   sms-spam-classifier/
+   │
+   ├── app.py               # Main Kivy application
+   ├── vectorizer2.pkl      # Saved TF-IDF vectorizer
+   ├── svm2.pkl             # Trained SVM model
+   ├── README.md
+   └── requirements.txt     # Python dependencies
+```
 
-`sms-spam-classifier/
-│
-├── app.py # Main Kivy application ├── vectorizer2.pkl # Saved TF-IDF vectorizer ├── svm2.pkl # Trained SVM model ├── README.md
-└── requirements.txt # Python dependencies` 
 
 ----------
 
